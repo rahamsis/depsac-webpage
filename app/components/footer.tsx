@@ -229,7 +229,7 @@ export default function Footer() {
         <div className="flex flex-wrap mt-0 -mx-3 lg:mx-2 xs:mx-2 mb-12">
           <div className="lg:w-[33.33%] px-3 w-full">
             <div className="mb-6 footer-logo-wrap ">
-              <a href="#" className="text-4xl font-medium text-footer">Los Chasquis<span>.</span></a>
+              <a href="#" className="text-4xl font-medium text-footer">DEP sac<span>.</span></a>
             </div>
 
             <p className="mb-6 mt-0 text-sm leading-7">Con una dedicación incomparable a la calidad y un compromiso constante con la perfección, nos enorgullece ser la principal elección para quienes buscan muebles personalizados de la más alta calidad y distinción</p>

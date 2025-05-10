@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Banner() {
     return (
         // <!-- Start Hero Section -->
