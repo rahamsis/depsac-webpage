@@ -158,7 +158,7 @@ function Header() {
         <nav className="bg-greenBanner pt-5 pb-5 flex items-center flex-nowrap justify-start navbar-dark bg-dark fixed top-0 left-0 w-full z-50" arial-label="Furni navigation bar">
             <div className="flex justify-between items-center max-w-[1320px] mx-auto w-full">
                 <a className="text-[32px] font-bold text-white" href="/">
-                    Los Chasquis<span>.</span>
+                    Depsac<span>.</span>
                 </a>
 
                 <div className="flex">
