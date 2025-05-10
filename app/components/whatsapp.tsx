@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 import styles from './header.module.css'
 
 var message = "Hola%2c%20podría%20brindarme%20más%20información%20sobre%20el%20servicio%20que%20brinda.%0AGracias%2e"
-var numero = "51954151363"
+var numero = "51963422245"
 var url = "https://api.whatsapp.com/send?phone=" + numero + "&text="
 
 
