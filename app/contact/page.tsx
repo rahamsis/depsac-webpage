@@ -1,3 +1,6 @@
+'use client';
+import Image from "next/image";
+
 function Banner() {
     return (
         // <!-- Start Hero Section -->
@@ -12,18 +15,32 @@ function Banner() {
                                 sino que también reflejan la artesanía excepcional y el compromiso con la excelencia en cada detalle.
                             </p>
                             <p className="mb-4">
-                                <a href="" className="btn bg-secondary font-semibold pt-3 pr-8 pb-3 pl-8 rounded-[30px] mr-2">Cotizar ahora</a>
-                                <a href="#" className="btn border-2 border-btn font-semibold pt-3 pr-8 pb-3 pl-8 rounded-[30px]">Explorar</a>
+                                <a href="" className="btn bg-acento font-semibold pt-3 pr-8 pb-3 pl-8 rounded-[30px] mr-2">Cotizar ahora</a>
+                                <a href="#" className="btn border-2 border-acento font-semibold pt-3 pr-8 pb-3 pl-8 rounded-[30px]">Explorar</a>
                             </p>
                         </div>
                     </div>
                     <div className="flex relative lg:w-[58%] w-full">
                         <div className="hidden lg:block xs:overflow-x-hidden after:absolute x:after:w-[255px] x:after:h-[217px] lg:after:w-[255px] lg:after:h-[217px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] lg:after:right-[0px] lg:after:top-[-20px] x:after:right-[-60px] x:after:top-[-60px] xl:after:right-[0px] 2xl:after:right-[-60px]">
-                            <img src="assets/muebles/mesa_para_tv.png" className="x:absolute lg:relative left-0 x:max-w-[780px] xl:max-w-[680px] 2xl:max-w-[780px] lg:max-w-[650px] h-auto align-middle box-border z-[2] x:top-[-100px] lg:top-[-50px] lg:right-[-100px]" />
+                            <Image
+                                src="/assets/muebles/mesa_para_tv.png"
+                                alt="image"
+                                width={780}
+                                height={500}
+                                className="x:absolute lg:relative left-0 x:max-w-[780px] xl:max-w-[680px] 2xl:max-w-[780px] lg:max-w-[650px] h-auto align-middle box-border z-[2] x:top-[-100px] lg:top-[-50px] lg:right-[-100px]"
+                                priority
+                            />
                         </div>
 
                         <div className="lg:hidden xs:overflow-x-hidden after:absolute xs:after:w-[220px] xs:after:h-[192px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] xs:after:right-0 xs:after:top-[60px] xs:mt-20">
-                            <img src="assets/muebles/mesa_para_tv.png" className="relative left-0 xs:max-w-[500px] h-full align-middle box-border z-[1] xs:top-[0px] xs:right-[0px]" />
+                            <Image
+                                src="/assets/muebles/mesa_para_tv.png"
+                                alt="image"
+                                width={300}
+                                height={200}
+                                className="relative left-0 xs:max-w-[500px] h-full align-middle box-border z-[1] xs:top-[0px] xs:right-[0px]"
+                                priority
+                            />
                         </div>
                     </div>
                 </div>
@@ -33,6 +50,24 @@ function Banner() {
     );
 }
 function Content() {
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const form = e.currentTarget;
+
+        const nombre = form.fname.value;
+        const apellidos = form.lname.value;
+        const correo = form.email.value;
+        const mensaje = form.message.value;
+
+        const asunto = encodeURIComponent("Consulta desde el formulario web");
+        const cuerpo = encodeURIComponent(
+            `Nombre: ${nombre} ${apellidos}\nCorreo: ${correo}\n\nMensaje:\n${mensaje}`
+        );
+
+        window.location.href = `mailto:wilber.bazo@depsac.com.pe?subject=${asunto}&body=${cuerpo}`;
+    };
+
     return (
         <div className="py-28 px-0">
             <div className="max-w-[1320px] w-full px-[0.75rem] mx-auto">
@@ -53,7 +88,7 @@ function Content() {
                                             </div>
                                             {/* <!-- /.icon --> */}
                                             <div className="service-contents">
-                                                <p className="mt-0 mb-4">Mz A. - Lt. 21 Asoc. Villa Las Margaritas - SMP</p>
+                                                <p className="mt-0 mb-4">Calle 3 Mz A8 Lte 41 Urb. Sol de Carabayllo I Etapa - Carabayllo.</p>
                                             </div>
                                             {/* <!-- /.service-contents--> */}
                                         </div>
@@ -72,7 +107,7 @@ function Content() {
                                             </div>
                                             {/* <!-- /.icon --> */}
                                             <div className="service-contents">
-                                                <p className="mt-0 mb-4">info@yourdomain.com</p>
+                                                <p className="mt-0 mb-4">wilber.bazo@depsac.com.pe</p>
                                             </div>
                                             {/* <!-- /.service-contents--> */}
                                         </div>
@@ -91,7 +126,7 @@ function Content() {
 
                                             {/* <!-- /.icon --> */}
                                             <div className="service-contents">
-                                                <p className="mt-0 mb-4">+51 917 584 018</p>
+                                                <p className="mt-0 mb-4">+51 963 422 245</p>
                                             </div>
                                             {/* <!-- /.service-contents--> */}
                                         </div>
@@ -104,7 +139,7 @@ function Content() {
                                 <p>Recuerda que puedes hacer tu cotización en el formulario de abajo o escribiendonos por <span className="font-bold"> Whatsapp</span> en el botón verde.</p>
                             </div>
 
-                            <form className="block mt-0">
+                            <form onSubmit={handleSubmit} className="block mt-0">
                                 <div className="flex flex-wrap mt-0">
                                     <div className="w-1/2 pr-3">
                                         <div className="form-group">

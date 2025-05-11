@@ -195,7 +195,7 @@ export default function Footer() {
 
         {/* sofa img */}
         <div className="absolute -top-[200px] z-[1] right-0 xs:overflow-x-hidden">
-          <img src="assets/muebles/mueble_base.png" alt="Image" className="max-w-[380px] h-auto align-middle md:translate-x-0 xs:translate-x-1/4" />
+          <Image src="/assets/muebles/mueble_base.png" alt="image" width={500} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 xs:translate-x-1/4" />
         </div>
 
         <div className="flex flex-wrap mt-0 -mx-3 gap-x-6 gap-y-0 pt-24 xs:mx-2 lg:mx-2">
@@ -203,7 +203,14 @@ export default function Footer() {
             <div className="mt-0 mb-20 relative z-[2]">
               <h3 className="flex items-center text-footer text-lg font-medium mt-6 lg:mt-0 mb-2 leading-[1.2]">
                 <span className="mr-1">
-                  <img src="assets/envelope-outline.svg" alt="Image" className="max-w-[380px] h-auto align-middle" />
+                  <Image
+                    src="/assets/envelope-outline.svg"
+                    alt="image"
+                    width={30}
+                    height={20}
+                    className="max-w-[380px] h-auto align-middle"
+                    priority
+                  />
                 </span>
                 <span>Subscríbete a las últimas noticias</span>
               </h3>
@@ -292,7 +299,7 @@ export default function Footer() {
         <div className="text-sm text-wychoose border-t -mx-3 lg:mx-1 xs:mx-0">
           <div className="flex flex-wrap mt-0 mx-0 lg:mx-2 pt-6">
             <div className="flex basis-auto lg:w-1/2 w-full px-6 lg:px-3">
-              <p className="mb-2 lg:text-left text-center mt-0">Copyright ©2023. All Rights Reserved. — Designed by  <a href="#">Rahamsis C.G.</a> Distributed By <a href="#">SysoftIntegra</a></p>
+              <p className="mb-2 lg:text-left text-center mt-0">Copyright ©2023. All Rights Reserved. — Designed by  <a href="#">Rahamsis C.G.</a></p>
             </div>
 
             <div className="flex basis-auto lg:w-1/2 w-full text-right px-6 lg:px-3 justify-center lg:justify-end">

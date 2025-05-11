@@ -47,7 +47,7 @@ const NavbarDesktop = () => {
                 <Link href="/" className="text-white font-bold">
                     <div className="leading-tight">
                         <div className="text-[42px]">
-                            DEP <span className="text-2xl align-bottom">SAC</span>
+                            D.E.P. <span className="text-2xl align-bottom">S.A.C.</span>
                         </div>
                         <div className="text-xs mt-[-2px] tracking-tight">
                             DISEÑOS DE EQUIPOS Y PROYECTOS
@@ -109,8 +109,8 @@ const NavbarMobile = () => {
             <div className="flex items-center justify-between w-full px-3 mx-auto">
                 <Link className="text-3xl font-semibold text-white py-[0.3125rem] mr-4 whitespace-nowrap" href="/">
                     <div className="leading-tight">
-                        <div className="text-[32px]">
-                            DEP <span className="text-2xl align-bottom">SAC</span>
+                        <div className="text-[28px]">
+                            D.E.P. <span className="text-2xl align-bottom">S.A.C.</span>
                         </div>
                         <div className="text-[9px] mt-[-2px] tracking-tight">
                             DISEÑOS DE EQUIPOS Y PROYECTOS
@@ -151,44 +151,44 @@ const NavbarMobile = () => {
     );
 };
 
-function Header() {
+// function Header() {
 
-    return (
-        // Start Hero Section 
-        <nav className="bg-greenBanner pt-5 pb-5 flex items-center flex-nowrap justify-start navbar-dark bg-dark fixed top-0 left-0 w-full z-50" arial-label="Furni navigation bar">
-            <div className="flex justify-between items-center max-w-[1320px] mx-auto w-full">
-                <a className="text-[32px] font-bold text-white" href="/">
-                    Depsac<span>.</span>
-                </a>
+//     return (
+//         // Start Hero Section 
+//         <nav className="bg-greenBanner pt-5 pb-5 flex items-center flex-nowrap justify-start navbar-dark bg-dark fixed top-0 left-0 w-full z-50" arial-label="Furni navigation bar">
+//             <div className="flex justify-between items-center max-w-[1320px] mx-auto w-full">
+//                 <a className="text-[32px] font-bold text-white" href="/">
+//                     Depsac<span>.</span>
+//                 </a>
 
-                <div className="flex">
-                    <ul className="flex flex-row pl-0 list-none mt-0 ms-auto align-middle items-center">
-                        <li className="ml-4 mr-4"><a className="font-medium text-white relative pr-2 pl-2 border-b-4 border-b-secondary" href="/">Inicio</a></li>
-                        <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="shop">Tienda</Link></li>
-                        <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="nosotros">Nosotros</Link></li>
-                        <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="services">Servicios</Link></li>
-                        <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="blog">Blog</Link></li>
-                        <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="contact">Contactanos</Link></li>
-                    </ul>
+//                 <div className="flex">
+//                     <ul className="flex flex-row pl-0 list-none mt-0 ms-auto align-middle items-center">
+//                         <li className="ml-4 mr-4"><a className="font-medium text-white relative pr-2 pl-2 border-b-4 border-b-secondary" href="/">Inicio</a></li>
+//                         <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="shop">Tienda</Link></li>
+//                         <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="nosotros">Nosotros</Link></li>
+//                         <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="services">Servicios</Link></li>
+//                         <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="blog">Blog</Link></li>
+//                         <li className="ml-4 mr-4"><Link className="font-medium text-white relative pr-2 pl-2 opacity-50" href="contact">Contactanos</Link></li>
+//                     </ul>
 
-                    <ul className="ml-10 flex ms-5">
-                        <li className="ml-4 mr-4">
-                            <a className="font-medium text-white relative" href="#">
-                                <img src="assets/user.svg" className="" />
-                            </a>
-                        </li>
-                        <li className="ml-4">
-                            <a className="font-medium text-white relative" href="cart.html">
-                                <img src="assets/cart.svg" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+//                     <ul className="ml-10 flex ms-5">
+//                         <li className="ml-4 mr-4">
+//                             <a className="font-medium text-white relative" href="#">
+//                                 <img src="assets/user.svg" className="" />
+//                             </a>
+//                         </li>
+//                         <li className="ml-4">
+//                             <a className="font-medium text-white relative" href="cart.html">
+//                                 <img src="assets/cart.svg" />
+//                             </a>
+//                         </li>
+//                     </ul>
+//                 </div>
+//             </div>
+//         </nav>
 
-    );
-}
+//     );
+// }
 
 const Navbar = () => {
     return (
