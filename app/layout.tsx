@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: 'https://depsac.com.pe',
     images: [
       {
-        url: '/depsac_miniatura.png',
+        url: 'https://depsac.com.pe/depsac_miniatura.png',
         width: 1200,
         height: 630,
         alt: 'Imagen de vista previa',
@@ -30,16 +30,30 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'DEP sac',
     description: 'Diseño de equipos y proyectos',
-    images: ['public/depsac_miniatura.png'],
+    images: ['https://depsac.com.pe/depsac_miniatura.png'],
   },
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
 
-  
+
 
   return (
     <html lang="en">
+      <head>
+        {/* Etiquetas meta adicionales para compartir correctamente */}
+        <meta property="og:title" content="DEPSAC" />
+        <meta property="og:description" content="Diseño de equipos y proyectos" />
+        <meta property="og:image" content="https://depsac.com.pe/depsac_miniatura.png" />
+        <meta property="og:url" content="https://depsac.com.pe" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="DEP sac" />
+        <meta name="twitter:description" content="Diseño de equipos y proyectos" />
+        <meta name="twitter:image" content="https://depsac.com.pe/depsac_miniatura.png" />
+        <link rel="icon" href="/faviconDepsac.ico" />
+      </head>
       <body className={inter.className}>
         <Header />
         <main>
