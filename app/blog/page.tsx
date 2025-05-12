@@ -22,7 +22,7 @@ function Banner() {
                     <div className="flex relative lg:w-[58%] w-full">
                         <div className="hidden lg:block xs:overflow-x-hidden after:absolute x:after:w-[255px] x:after:h-[217px] lg:after:w-[255px] lg:after:h-[217px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] lg:after:right-[0px] lg:after:top-[-20px] x:after:right-[-60px] x:after:top-[-60px] xl:after:right-[0px] 2xl:after:right-[-60px]">
                             <Image
-                                src="/assets/muebles/mesa_para_tv.png"
+                                src="/images/productos/copeland-discus.png"
                                 alt="image"
                                 width={780}
                                 height={500}
@@ -33,7 +33,7 @@ function Banner() {
 
                         <div className="lg:hidden xs:overflow-x-hidden after:absolute xs:after:w-[220px] xs:after:h-[192px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] xs:after:right-0 xs:after:top-[60px] xs:mt-20">
                             <Image
-                                src="/assets/muebles/mesa_para_tv.png"
+                                src="/images/productos/copeland-discus.png"
                                 alt="image"
                                 width={300}
                                 height={200}
@@ -59,7 +59,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/cama2.png"
+                                    src="/images/proyectos/proyecto1.png"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -80,7 +80,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/mesadenoche2.png"
+                                    src="/images/proyectos/proyecto2.png"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -101,7 +101,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/mesacomedor.png"
+                                    src="/images/proyectos/proyecto3.png"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -122,7 +122,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/blog/post2.png"
+                                    src="/images/proyectos/proyecto4.png"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -143,7 +143,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/blog/post3.png"
+                                    src="/images/proyectos/proyecto5.png"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -164,7 +164,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/blog/post4.png"
+                                    src="/images/proyectos/proyecto6.png"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -185,7 +185,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/blog/post5.png"
+                                    src="/images/proyectos/proyecto6.png"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -206,7 +206,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/blog/post6.png"
+                                    src="/images/proyectos/proyecto8.jpg"
                                     alt="image"
                                     width={600}
                                     height={200}
@@ -227,7 +227,7 @@ function BlogSection() {
                         <div className="post-entry">
                             <a href="#" className="block mb-5 text-primary ">
                                 <Image
-                                    src="/assets/muebles/blog/post7.png"
+                                    src="/images/proyectos/proyecto9.png"
                                     alt="image"
                                     width={600}
                                     height={200}

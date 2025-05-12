@@ -24,7 +24,7 @@ function Banner() {
                     <div className="flex relative lg:w-[58%] w-full">
                         <div className="hidden lg:block xs:overflow-x-hidden after:absolute x:after:w-[255px] x:after:h-[217px] lg:after:w-[255px] lg:after:h-[217px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] lg:after:right-[0px] lg:after:top-[-20px] x:after:right-[-60px] x:after:top-[-60px] xl:after:right-[0px] 2xl:after:right-[-60px]">
                             <Image
-                                src="/assets/muebles/mesa_para_tv.png"
+                                src="/images/productos/copeland-discus.png"
                                 alt="image"
                                 width={780}
                                 height={500}
@@ -35,7 +35,7 @@ function Banner() {
 
                         <div className="lg:hidden xs:overflow-x-hidden after:absolute xs:after:w-[220px] xs:after:h-[192px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] xs:after:right-0 xs:after:top-[60px] xs:mt-20">
                             <Image
-                                src="/assets/muebles/mesa_para_tv.png"
+                                src="/images/productos/copeland-discus.png"
                                 alt="image"
                                 width={300}
                                 height={200}
@@ -148,53 +148,53 @@ function Content() {
                 <div className="flex flex-wrap mt-0 lg:mx-[-0.75rem]">
 
                     {/* <!-- Start Column 1 --> */}
-                    <Item image={"/assets/muebles/mesa_de_noche.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/copeland-discus.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 1 --> */}
 
                     {/* <!-- Start Column 2 --> */}
-                    <Item image={"/assets/muebles/tienda/product2.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/EnfriadorPlacasAlfaLaval.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 2 --> */}
 
                     {/* <!-- Start Column 3 --> */}
-                    <Item image={"/assets/muebles/tienda/product3.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/maneurop.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 3 --> */}
 
                     {/* <!-- Start Column 4 --> */}
-                    <Item image={"/assets/muebles/armario_tv.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/Bitzer.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 4 --> */}
 
 
                     {/* <!-- Start Column 1 --> */}
-                    <Item image={"/assets/muebles/mesa_para_tv.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/scroll-copeland.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 1 --> */}
 
                     {/* <!-- Start Column 2 --> */}
-                    <Item image={"/assets/muebles/cama_madera.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/tornillo-bitzer.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 2 --> */}
 
                     {/* <!-- Start Column 3 --> */}
-                    <Item image={"/assets/muebles/tienda/product4.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/unidadCondensadoraDanfoss.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 3 --> */}
 
                     {/* <!-- Start Column 4 --> */}
-                    <Item image={"/assets/muebles/tienda/product5.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/unidadCondensadoraRussell.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 4 --> */}
 
 
                     {/* <!-- Start Column 1 --> */}
-                    <Item image={"/assets/muebles/tienda/product7.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/valvula selenoide.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 1 --> */}
 
                     {/* <!-- Start Column 2 --> */}
-                    <Item image={"/assets/muebles/silla1.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/valvula-expansion-electronica.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 2 --> */}
 
                     {/* <!-- Start Column 3 --> */}
-                    <Item image={"/assets/muebles/tienda/product6.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/valvula-expansion-termostatica.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 3 --> */}
 
                     {/* <!-- Start Column 4 --> */}
-                    <Item image={"/assets/muebles/tienda/product8.png"} name={"Mesa de Noche"} price={"00.00"} />
+                    <Item image={"/images/productos/tiro-forzado-mipal.png"} name={"Mesa de Noche"} price={"00.00"} />
                     {/* <!-- End Column 4 --> */}
 
                 </div>

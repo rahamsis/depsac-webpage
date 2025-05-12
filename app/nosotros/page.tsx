@@ -21,7 +21,7 @@ function Banner() {
                     <div className="flex relative lg:w-[58%] w-full">
                         <div className="hidden lg:block xs:overflow-x-hidden after:absolute x:after:w-[255px] x:after:h-[217px] lg:after:w-[255px] lg:after:h-[217px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] lg:after:right-[0px] lg:after:top-[-20px] x:after:right-[-60px] x:after:top-[-60px] xl:after:right-[0px] 2xl:after:right-[-60px]">
                             <Image
-                                src="/assets/muebles/mesa_para_tv.png"
+                                src="/images/productos/copeland-discus.png"
                                 alt="image"
                                 width={780}
                                 height={500}
@@ -32,7 +32,7 @@ function Banner() {
 
                         <div className="lg:hidden xs:overflow-x-hidden after:absolute xs:after:w-[220px] xs:after:h-[192px] after:bg-bannerRight after:bg-contain after:bg-no-repeat after:right-[-60px] xs:after:right-0 xs:after:top-[60px] xs:mt-20">
                             <Image
-                                src="/assets/muebles/mesa_para_tv.png"
+                                src="/images/productos/copeland-discus.png"
                                 alt="image"
                                 width={300}
                                 height={200}
@@ -111,7 +111,7 @@ function WhyChoose() {
                     <div className="lg:w-[41.67%] w-full mt-10 lg:mt-0">
                         <div className="relative after:absolute after:w-[300px] lg:after:w-[500px] after:h-[200px] after:bg-whychoose after:bg-no-repeat after:bg-contain after:content-normal after:top-[-80px] after:left-[-95px] after:z-[-1]">
                             <Image
-                                src="/assets/muebles/ropero2.png"
+                                src="/images/proyectos/proyecto1.png"
                                 alt="ropero2"
                                 width={600}
                                 height={600}

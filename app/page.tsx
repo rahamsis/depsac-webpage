@@ -8,7 +8,7 @@ function Banner() {
     // <!-- Start Hero Section -->
     <div className="bg-primary pt-[98px] lg:pr-0 x:pb-36 lg:pb-0 lg:mt-[88px]">
       <div className="max-w-[1320px] mx-auto">
-        <div className="flex flex-wrap mt-0 mx-[-12] justify-between">
+        <div className="flex flex-wrap mt-0 mx-[-12] justify-between px-3">
           <div className="lg:w-[42%] w-full px-3">
             <div className="relative max-w-md z-[4]">
               <h1 className="text-fondo_claro text-4xl lg:text-5xl font-bold mb-[30px] leading-10 lg:leading-[3.5rem]">
@@ -145,7 +145,7 @@ function Item(props: Props) {
 function Products() {
 
   return (
-    <div className="pt-28 lg:pb-28 pb-0">
+    <div className="pt-28 lg:pb-28 pb-0 px-3">
       <div className="max-w-[1320px] mr-auto ml-auto">
         <div className="flex flex-wrap mt-0 lg:ml-[-0.75] lg:mr-[-0.75] xs:mx-3">
 
@@ -182,7 +182,7 @@ function Products() {
 
 function WhyChoose() {
   return (
-    <div className="py-28 px-0">
+    <div className="py-28 px-7">
       <div className="max-w-[1320px] mr-auto ml-auto">
         <div className="flex flex-wrap mt-[0] lg:mr-[0.75] lg:ml-[0.75px] xs:mx-3 justify-between">
           <div className="lg:w-1/2 w-full">
@@ -321,8 +321,8 @@ function PopularProduct() {
                 <Image src="/images/productos/unidadCondensadoraDanfoss.png" alt="image" width={300} height={45} className="max-w-full h-auto align-middle" priority />
               </div>
               <div className="pt-4">
-                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Banquillo - model 1</h3>
-                <p className="leading-[1.4] mb-[10px] text-sm mt-0">Elaborado con madera de la más alta calidad para interiores o exteriores</p>
+                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Ventilador Industrial</h3>
+                <p className="leading-[1.4] mb-[10px] text-sm mt-0">Un ventilador industrial es un equipo robusto que mueve gran cantidad de aire para ventilar espacios amplios como fábricas o talleres.</p>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">
                   <a href="#" className="text-primary">Leer más</a>
                 </p>
@@ -336,8 +336,8 @@ function PopularProduct() {
                 <Image src="/images/productos/EnfriadorPlacasAlfaLaval.png" alt="image" width={300} height={45} className="max-w-full h-auto align-middle" priority />
               </div>
               <div className="pt-4">
-                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Silla - model 2</h3>
-                <p className="leading-[1.4] mb-[10px] text-sm mt-0">Silla de madera con base tapizada hecha en color a la preferencia</p>
+                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Enfriador de placas</h3>
+                <p className="leading-[1.4] mb-[10px] text-sm mt-0">Un enfriador de placas transfiere calor entre líquidos mediante placas metálicas delgadas.</p>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">
                   <a href="#" className="text-primary">Leer más</a>
                 </p>
@@ -351,8 +351,8 @@ function PopularProduct() {
                 <Image src="/images/productos/unidadCondensadoraRussell.png" alt="image" width={300} height={45} className="max-w-full h-auto align-middle" priority />
               </div>
               <div className="pt-4">
-                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Silla - model 3</h3>
-                <p className="leading-[1.4] mb-[10px] text-sm mt-0">Silla de madera con base y respaldar tapizada hecha en color a la preferencia</p>
+                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Ventilador - modelo 2</h3>
+                <p className="leading-[1.4] mb-[10px] text-sm mt-0">Ventilador industrial es un equipo robusto que mueve gran cantidad de aire para ventilar espacios amplios</p>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">
                   <a href="#" className="text-primary">Leer más</a>
                 </p>
@@ -544,10 +544,10 @@ function BlogSection() {
           <div className="flex basis-auto lg:w-[33.33%] xs:w-full mb-0 px-3">
             <div className="post-entry">
               <a href="#" className="block mb-5 text-primary ">
-                <Image src="/assets/muebles/cama2.png" alt="image" width={500} height={45} className="rounded-[20px] max-w-full h-auto align-middle" priority />
+                <Image src="/images/proyectos/proyecto4.png" alt="image" width={500} height={45} className="rounded-[20px] max-w-full h-auto align-middle" priority />
               </a>
               <div className="px-[15px]">
-                <h3 className="text-base font-semibold mb-2 mt-0 leading-[1.2]"><a href="#" className="text-primary ">Cama para Dormitorio de 2 Plazas</a></h3>
+                <h3 className="text-base font-semibold mb-2 mt-0 leading-[1.2]"><a href="#" className="text-primary ">Estructuras metálicas a medida</a></h3>
                 <div className="text-sm">
                   <span><a href="#" className="font-semibold text-primary">Nota: </a></span> <span>Todas las imágenes son referenciales</span>
                 </div>
@@ -558,10 +558,10 @@ function BlogSection() {
           <div className="flex basis-auto lg:w-[33.33%] xs:w-full mb-0 px-3 my-12 lg:my-0">
             <div className="post-entry">
               <a href="#" className="block mb-5 text-primary ">
-                <Image src="/assets/muebles/mesadenoche2.png" alt="image" width={500} height={45} className="rounded-[20px] max-w-full h-auto align-middle" priority />
+                <Image src="/images/proyectos/proyecto5.png" alt="image" width={500} height={45} className="rounded-[20px] max-w-full h-auto align-middle" priority />
               </a>
               <div className="px-[15px]">
-                <h3 className="text-base font-semibold mb-2 mt-0 leading-[1.2]"><a href="#" className="text-primary ">Mesa de Centro, diseño futurista</a></h3>
+                <h3 className="text-base font-semibold mb-2 mt-0 leading-[1.2]"><a href="#" className="text-primary ">Soldadura a detalle</a></h3>
                 <div className="text-sm">
                   <span><a href="#" className="font-semibold text-primary">Nota: </a></span> <span>Todas las imágenes son referenciales</span>
                 </div>
@@ -572,10 +572,10 @@ function BlogSection() {
           <div className="flex basis-auto lg:w-[33.33%] xs:w-full mb-0 px-3 my-12 lg:my-0">
             <div className="post-entry">
               <a href="#" className="block mb-5 text-primary ">
-                <Image src="/assets/muebles/mesacomedor.png" alt="image" width={500} height={45} className="rounded-[20px] max-w-full h-auto align-middle" priority />
+                <Image src="/images/proyectos/proyecto6.png" alt="image" width={500} height={45} className="rounded-[20px] max-w-full h-auto align-middle" priority />
               </a>
               <div className="px-[15px]">
-                <h3 className="text-base font-semibold mb-2 mt-0 leading-[1.2]"><a href="#" className="text-primary ">Mesa de Comedor - 6 personas</a></h3>
+                <h3 className="text-base font-semibold mb-2 mt-0 leading-[1.2]"><a href="#" className="text-primary ">Personal capacitado en todo momento</a></h3>
                 <div className="text-sm">
                   <span><a href="#" className="font-semibold text-primary">Nota: </a></span> <span>Todas las imágenes son referenciales</span>
                 </div>

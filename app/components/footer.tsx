@@ -194,8 +194,12 @@ export default function Footer() {
       <div className="lg:max-w-[1320px] w-full mx-auto relative ss:px-3 xs:px-0">
 
         {/* sofa img */}
-        <div className="absolute -top-[200px] z-[1] right-0 xs:overflow-x-hidden">
-          <Image src="/assets/muebles/mueble_base.png" alt="image" width={500} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 xs:translate-x-1/4" />
+        <div className="hidden lg:block absolute -top-[200px] z-[1] right-0 xs:overflow-x-hidden">
+          <Image src="/images/productos/bitzer.png" alt="image" width={500} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 xs:translate-x-1/4" />
+        </div>
+
+        <div className=" lg:hidden absolute -top-[200px] z-[1] right-0 xs:overflow-x-hidden">
+          <Image src="/images/productos/bitzer.png" alt="image" width={250} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 " />
         </div>
 
         <div className="flex flex-wrap mt-0 -mx-3 gap-x-6 gap-y-0 pt-24 xs:mx-2 lg:mx-2">
@@ -239,7 +243,8 @@ export default function Footer() {
               <a href="#" className="text-4xl font-medium text-footer">DEP sac<span>.</span></a>
             </div>
 
-            <p className="mb-6 mt-0 text-sm leading-7">Con una dedicación incomparable a la calidad y un compromiso constante con la perfección, nos enorgullece ser la principal elección para quienes buscan muebles personalizados de la más alta calidad y distinción</p>
+            <p className="mb-6 mt-0 text-sm leading-7">Con una dedicación incomparable a la calidad y un compromiso constante con la perfección, nos enorgullece ser la 
+              principal elección para quienes buscan estructuras metalicas o productos de la más alta calidad y distinción</p>
 
             <ul className="pl-0 list-none mt-0 mb-4">
               <li className="m-[2px] inline-block">
@@ -278,17 +283,17 @@ export default function Footer() {
 
               <div className="flex basis-auto lg:w-1/4 w-1/2">
                 <ul className="pl-0 list-none mt-0 mb-4">
-                  <li className="mb-[10px]"><a href="#" className="text-primary">Trabajos</a></li>
-                  <li className="mb-[10px]"><a href="#" className="text-primary">Nuestro equipo</a></li>
-                  <li className="mb-[10px]"><a href="#" className="text-primary">Especialistas</a></li>
-                  <li className="mb-[10px]"><a href="#" className="text-primary">Politicas</a></li>
+                  <li className="mb-[10px]"><a href="/blog" className="text-primary">Trabajos</a></li>
+                  <li className="mb-[10px]"><a href="/nosotros" className="text-primary">Nuestro equipo</a></li>
+                  <li className="mb-[10px]"><a href="/nosotros" className="text-primary">Especialistas</a></li>
+                  <li className="mb-[10px]"><a href="/nosotros" className="text-primary">Politicas</a></li>
                 </ul>
               </div>
 
               <div className="flex basis-auto lg:w-1/4 w-1/2">
                 <ul className="pl-0 list-none mt-0 mb-4">
-                  <li className="mb-[10px]"><Link href="/shop" className="text-primary">Muebles</Link></li>
-                  <li className="mb-[10px]"><Link href="/shop" className="text-primary">Sillas</Link></li>
+                  <li className="mb-[10px]"><Link href="/shop" className="text-primary">Comprensoras</Link></li>
+                  <li className="mb-[10px]"><Link href="/shop" className="text-primary">Estructuras</Link></li>
                   <li className="mb-[10px]"><Link href="/shop" className="text-primary">General</Link></li>
                 </ul>
               </div>
