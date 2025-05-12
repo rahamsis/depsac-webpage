@@ -195,11 +195,11 @@ export default function Footer() {
 
         {/* sofa img */}
         <div className="hidden lg:block absolute -top-[200px] z-[1] right-0 xs:overflow-x-hidden">
-          <Image src="/images/productos/bitzer.png" alt="image" width={500} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 xs:translate-x-1/4" />
+          <Image src="/images/productos/Bitzer.png" alt="image" width={500} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 xs:translate-x-1/4" />
         </div>
 
         <div className=" lg:hidden absolute -top-[200px] z-[1] right-0 xs:overflow-x-hidden">
-          <Image src="/images/productos/bitzer.png" alt="image" width={250} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 " />
+          <Image src="/images/productos/Bitzer.png" alt="image" width={250} height={45} className="max-w-[380px] h-auto align-middle md:translate-x-0 " />
         </div>
 
         <div className="flex flex-wrap mt-0 -mx-3 gap-x-6 gap-y-0 pt-24 xs:mx-2 lg:mx-2">
