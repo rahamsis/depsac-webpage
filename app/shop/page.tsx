@@ -53,8 +53,9 @@ function Banner() {
 
 interface Props {
     image: string
-    name: String
-    price: String
+    name: string
+    price: string
+    category: string
 }
 
 function Item(props: Props) {
@@ -137,66 +138,167 @@ function Item(props: Props) {
 
 
 function Content() {
-    const background = useRef<HTMLButtonElement>(null);
-    const imgProduct = useRef<HTMLImageElement>(null);
-    const btnPlus = useRef<HTMLSpanElement>(null);
-    const bckgPrueba = useRef<HTMLButtonElement>(null);
+    const products = [
+        {
+            image: "/images/productos/copeland-discus.png",
+            name: "Compresor semi hermetico Copeland Discus",
+            price: "00.00",
+            category: "Compresores"
+        },
+        {
+            image: "/images/productos/EnfriadorPlacasAlfaLaval.png",
+            name: "Intercambiadores de placas",
+            price: "00.00",
+            category: "Intercambiadores"
+        },
+        {
+            image: "/images/productos/maneurop.png",
+            name: "Compresor hermetico Danfoss",
+            price: "00.00",
+            category: "Compresores"
+        },
+        {
+            image: "/images/productos/Bitzer.png",
+            name: "Compresor semi hermetico Bitzer",
+            price: "00.00",
+            category: "Compresores"
+        },
+        {
+            image: "/images/productos/scroll-copeland.png",
+            name: "Compresor hermetico Scroll",
+            price: "00.00",
+            category: "Compresores"
+        },
+        {
+            image: "/images/productos/tornillo-bitzer.png",
+            name: "Compresor semi hermetico Tornillo",
+            price: "00.00",
+            category: "Compresores"
+        },
+        {
+            image: "/images/productos/unidadCondensadoraDanfoss.png",
+            name: "Unidades condensadoras indoor",
+            price: "00.00",
+            category: "Und. condensadoras indoor"
+        },
+        {
+            image: "/images/productos/unidadCondensadoraRussell.png",
+            name: "Unidades condensadoras Outdoor",
+            price: "00.00",
+            category: "Und. condensadoras outdoor"
+        },
+        {
+            image: "/images/productos/Unidad indoor 2.png",
+            name: "Unidad indoor 2",
+            price: "00.00",
+            category: "Und. condensadoras indoor"
+        },
+        {
+            image: "/images/productos/Unidad indoor 3.png",
+            name: "Unidad indoor 3",
+            price: "00.00",
+            category: "Und. condensadoras indoor"
+        },
+        {
+            image: "/images/productos/outdoor 2.png",
+            name: "Unidad outdoor 2",
+            price: "00.00",
+            category: "Und. condensadoras outdoor"
+        },
+        {
+            image: "/images/productos/rack 1.png",
+            name: "Unidad outdoor 2",
+            price: "00.00",
+            category: "Racks"
+        },
+        {
+            image: "/images/productos/filtro de succion tipo caucho.png",
+            name: "filtro de succion tipo caucho",
+            price: "00.00",
+            category: "Accesorios"
+        },
+        {
+            image: "/images/productos/filtro liquido tipo caucho.png",
+            name: "filtro liquido tipo caucho",
+            price: "00.00",
+            category: "Accesorios"
+        },
+        {
+            image: "/images/productos/valvula reguladora de succion.png",
+            name: "valvula reguladora de succion",
+            price: "00.00",
+            category: "Accesorios"
+        },
+        {
+            image: "/images/productos/valvula selenoide.png",
+            name: "valvula selenoide",
+            price: "00.00",
+            category: "Accesorios"
+        },
+        {
+            image: "/images/productos/valvula-expansion-electronica.png",
+            name: "valvula-expansion-electronica",
+            price: "00.00",
+            category: "Accesorios"
+        },
+        {
+            image: "/images/productos/valvula-expansion-termostatica.png",
+            name: "valvula-expansion-termostatica",
+            price: "00.00",
+            category: "Accesorios"
+        },
+        {
+            image: "/images/productos/tiro-forzado-mipal.png",
+            name: " Evaporadores cubicos",
+            price: "00.00",
+            category: " Evaporadores cubicos"
+        }
+    ];
+
+    const categories = ["Todos", "Compresores", "Intercambiadores", "Und. Condensadoras indoor", "Und. condensadoras outdoor", "Racks", "Accesorios"," Evaporadores cubicos"];
+    const [selectedCategory, setSelectedCategory] = useState("Todos");
+
+    const filteredProducts = selectedCategory === "Todos"
+        ? products
+        : products.filter(p => p.category === selectedCategory);
+
 
     return (
-        <div className="pt-28 pr-0 pb-48 pl-0">
-            <div className="max-w-[1320px] w-full px-[0.75rem] mx-auto">
-                <div className="flex flex-wrap mt-0 lg:mx-[-0.75rem]">
+        <div className="pt-8 lg:pt-28 pr-0 pb-48 pl-0">
+            <div className="max-w-[1320px] mx-auto px-4">
+                <div className="flex flex-wrap -mx-4">
 
-                    {/* <!-- Start Column 1 --> */}
-                    <Item image={"/images/productos/copeland-discus.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 1 --> */}
+                    {/* Sidebar de Categorías */}
+                    <div className="w-full lg:w-1/4 px-4 mb-10">
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <h3 className="text-xl font-semibold mb-4">Categorías</h3>
+                            <ul className="space-y-2">
+                                {categories.map((cat) => (
+                                    <li key={cat}>
+                                        <button
+                                            className={`w-full text-left px-4 py-2 rounded-lg hover:bg-primary hover:text-white ${selectedCategory === cat ? 'bg-primary text-white' : 'text-gray-800'}`}
+                                            onClick={() => setSelectedCategory(cat)}
+                                        >
+                                            {cat}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
 
-                    {/* <!-- Start Column 2 --> */}
-                    <Item image={"/images/productos/EnfriadorPlacasAlfaLaval.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 2 --> */}
-
-                    {/* <!-- Start Column 3 --> */}
-                    <Item image={"/images/productos/maneurop.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 3 --> */}
-
-                    {/* <!-- Start Column 4 --> */}
-                    <Item image={"/images/productos/Bitzer.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 4 --> */}
-
-
-                    {/* <!-- Start Column 1 --> */}
-                    <Item image={"/images/productos/scroll-copeland.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 1 --> */}
-
-                    {/* <!-- Start Column 2 --> */}
-                    <Item image={"/images/productos/tornillo-bitzer.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 2 --> */}
-
-                    {/* <!-- Start Column 3 --> */}
-                    <Item image={"/images/productos/unidadCondensadoraDanfoss.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 3 --> */}
-
-                    {/* <!-- Start Column 4 --> */}
-                    <Item image={"/images/productos/unidadCondensadoraRussell.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 4 --> */}
-
-
-                    {/* <!-- Start Column 1 --> */}
-                    <Item image={"/images/productos/valvula selenoide.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 1 --> */}
-
-                    {/* <!-- Start Column 2 --> */}
-                    <Item image={"/images/productos/valvula-expansion-electronica.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 2 --> */}
-
-                    {/* <!-- Start Column 3 --> */}
-                    <Item image={"/images/productos/valvula-expansion-termostatica.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 3 --> */}
-
-                    {/* <!-- Start Column 4 --> */}
-                    <Item image={"/images/productos/tiro-forzado-mipal.png"} name={"Mesa de Noche"} price={"00.00"} />
-                    {/* <!-- End Column 4 --> */}
-
+                    {/* Productos */}
+                    <div className="w-full lg:w-3/4 px-4 flex flex-wrap">
+                        {filteredProducts.map((product, index) => (
+                            <Item
+                                key={index}
+                                image={product.image}
+                                name={product.name}
+                                price={product.price}
+                                category={product.category}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

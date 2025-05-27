@@ -163,15 +163,15 @@ function Products() {
           {/* <!-- End Column 1 --> */}
 
           {/* <!-- Start Column 2 --> */}
-          <Item image={"/images/productos/maneurop.png"} name={"maneurop"} price={"00.00"} description={"Esta es una pequeña descripción del producto"} />
+          <Item image={"/images/productos/maneurop.png"} name={"Cmpresor hermetico Danfoss"} price={"00.00"} description={"Esta es una pequeña descripción del producto"} />
           {/* <!-- End Column 2 --> */}
 
           {/* <!-- Start Column 3 --> */}
-          <Item image={"/images/productos/scroll-copeland.png"} name={"scroll-copeland"} price={"00.00"} description={""} />
+          <Item image={"/images/productos/scroll-copeland.png"} name={"Compresor hermetico Scroll"} price={"00.00"} description={""} />
           {/* <!-- End Column 3 --> */}
 
           {/* <!-- Start Column 4 --> */}
-          <Item image={"/images/productos/tornillo-bitzer.png"} name={"tornillo-bitzer"} price={"00.00"} description={""} />
+          <Item image={"/images/productos/tornillo-bitzer.png"} name={"Compresor semi hermetico Tornillo"} price={"00.00"} description={""} />
           {/* <!-- End Column 4 --> */}
 
         </div>
@@ -321,7 +321,7 @@ function PopularProduct() {
                 <Image src="/images/productos/unidadCondensadoraDanfoss.png" alt="image" width={300} height={45} className="max-w-full h-auto align-middle" priority />
               </div>
               <div className="pt-4">
-                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Ventilador Industrial</h3>
+                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Unidades condensadoras indoor</h3>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">Un ventilador industrial es un equipo robusto que mueve gran cantidad de aire para ventilar espacios amplios como fábricas o talleres.</p>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">
                   <a href="#" className="text-primary">Leer más</a>
@@ -336,7 +336,7 @@ function PopularProduct() {
                 <Image src="/images/productos/EnfriadorPlacasAlfaLaval.png" alt="image" width={300} height={45} className="max-w-full h-auto align-middle" priority />
               </div>
               <div className="pt-4">
-                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Enfriador de placas</h3>
+                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Intercambiadores de placas</h3>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">Un enfriador de placas transfiere calor entre líquidos mediante placas metálicas delgadas.</p>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">
                   <a href="#" className="text-primary">Leer más</a>
@@ -351,7 +351,7 @@ function PopularProduct() {
                 <Image src="/images/productos/unidadCondensadoraRussell.png" alt="image" width={300} height={45} className="max-w-full h-auto align-middle" priority />
               </div>
               <div className="pt-4">
-                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">Ventilador - modelo 2</h3>
+                <h3 className="text-sm font-bold text-primary mt-0 mb-2 leading-[1.2]">unidades condensadoras Outdoor</h3>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">Ventilador industrial es un equipo robusto que mueve gran cantidad de aire para ventilar espacios amplios</p>
                 <p className="leading-[1.4] mb-[10px] text-sm mt-0">
                   <a href="#" className="text-primary">Leer más</a>

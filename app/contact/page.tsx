@@ -65,7 +65,7 @@ function Content() {
             `Nombre: ${nombre} ${apellidos}\nCorreo: ${correo}\n\nMensaje:\n${mensaje}`
         );
 
-        window.location.href = `mailto:wilber.bazo@depsac.com.pe?subject=${asunto}&body=${cuerpo}`;
+        window.location.href = `mailto:maria.espinoza@depsac.com.pe?subject=${asunto}&body=${cuerpo}`;
     };
 
     return (
@@ -107,7 +107,7 @@ function Content() {
                                             </div>
                                             {/* <!-- /.icon --> */}
                                             <div className="service-contents">
-                                                <p className="mt-0 mb-4">wilber.bazo@depsac.com.pe</p>
+                                                <p className="mt-0 mb-4">maria.espinoza@depsac.com.pe</p>
                                             </div>
                                             {/* <!-- /.service-contents--> */}
                                         </div>
